@@ -22,6 +22,8 @@ d = {'Region':loc,'discharged':discharged,'death_count':deaths,'Confirmed_cases'
 df = pd.DataFrame(d)
 print(df.sort_values('death_count',ascending=False))
 df.to_csv('covid.csv')
+
+# below code will not execute
 sys.exit()
 # if we take a site with large amount of data in multiple pages then we can use the below code to hit multiple times on url and create database each Time
 final = pd.DataFrame()
